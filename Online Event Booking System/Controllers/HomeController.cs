@@ -26,11 +26,31 @@ namespace Online_Event_Booking_System.Controllers
         {
             return View();
         }
-        public IActionResult Cities()  
+        public IActionResult mumbai()  
         {
             return View();
         }
-        public IActionResult Events()
+        public IActionResult delhi()
+        {
+            return View();
+        }
+        public IActionResult kolkata()
+        {
+            return View();
+        }
+        public IActionResult chennai()
+        {
+            return View();
+        }
+        public IActionResult music()
+        {
+            return View();
+        }
+        public IActionResult comedy()
+        {
+            return View();
+        }
+        public IActionResult magic()
         {
             return View();
         }

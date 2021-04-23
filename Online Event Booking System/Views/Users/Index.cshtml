@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Online_Event_Booking_System.Models.User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Employee Register</h4>
+<hr />
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pwd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Confirmpwd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaritalStatus)
+            </th>
+
+            <th>
+                <a asp-action="AddOrEdit" class="btn btn-outlinesuccess"><i class="far fa-plus-square"></i> Employee</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pwd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Confirmpwd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaritalStatus)
+            </td>
+            <td>
+                <a asp-action="AddOrEdit" asp-routeid="@item.UserId"><i class="fa fa-marker fa-lg"></i></a>
+                <a asp-action="Delete" asp-routeid="@item.UserId" class="text-danger ml-1" onclick="returnconfirm('Are you sure to delete this record?')">
+                    <i class="fa fa-trash-alt fa-lg"></i>
+                </a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

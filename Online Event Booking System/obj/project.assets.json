@@ -7143,6 +7143,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore >= 5.0.5",
+      "Microsoft.EntityFrameworkCore.Abstractions >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
@@ -7150,19 +7151,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FRITHA PAHUJA\\.nuget\\packages\\": {}
+    "C:\\Users\\ARJIT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FRITHA PAHUJA\\source\\repos\\Online Event Booking System\\Online Event Booking System\\Online Event Booking System.csproj",
+      "projectUniqueName": "F:\\newproject\\OnlineEventBookingSystem\\Online Event Booking System\\Online Event Booking System.csproj",
       "projectName": "Online Event Booking System",
-      "projectPath": "C:\\Users\\FRITHA PAHUJA\\source\\repos\\Online Event Booking System\\Online Event Booking System\\Online Event Booking System.csproj",
-      "packagesPath": "C:\\Users\\FRITHA PAHUJA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FRITHA PAHUJA\\source\\repos\\Online Event Booking System\\Online Event Booking System\\obj\\",
+      "projectPath": "F:\\newproject\\OnlineEventBookingSystem\\Online Event Booking System\\Online Event Booking System.csproj",
+      "packagesPath": "C:\\Users\\ARJIT\\.nuget\\packages\\",
+      "outputPath": "F:\\newproject\\OnlineEventBookingSystem\\Online Event Booking System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FRITHA PAHUJA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ARJIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7189,6 +7190,10 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.Abstractions": {
             "target": "Package",
             "version": "[5.0.5, )"
           },
@@ -7231,7 +7236,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

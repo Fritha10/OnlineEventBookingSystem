@@ -2,32 +2,129 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!Home!>
 
-    
-<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="~/css/site.css" />
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
 
-<div class="container">
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+<div class="container my-4">
+
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+        <!--Controls-->
+        <div>
+            <a class=" btn btn-primary" href="#multi-item-example" data-slide="prev"><b><</b></a>
+            <a class="btn btn-primary" href="#multi-item-example" data-slide="next"><b>></b></a>
+        </div>
+        <!--/.Controls-->
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+
             <div class="carousel-item active">
-                <div class="carousel-caption">
-                    <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen. </p> <img src="https://i.imgur.com/lE89Aey.jpg">
-                    <div id="image-caption">Nick Doe</div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="~/images/Delhi.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">New Delhi</h4>
+
+                                <a class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Mumbai</h4>
+
+                                <a class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="~/images/Kolkata.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Kolkata</h4>
+
+                                <a class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+            <!--/.First slide-->
+            <!--Second slide-->
             <div class="carousel-item">
-                <div class="carousel-caption">
-                    <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img src="https://i.imgur.com/QptVdsp.jpg" class="img-fluid">
-                    <div id="image-caption">Cromption Greves</div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="~/images/concert.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Live Music Concert</h4>
+
+                                <a class="btn btn-primary align-content-center">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="~/images/standup.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Standup Comedy</h4>
+
+                                <a class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="~/images/magic.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Magic Show</h4>
+
+                                <a class="btn btn-primary align-content-center">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="carousel-item">
-                <div class="carousel-caption">
-                    <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid">
-                    <div id="image-caption">Harry Mon</div>
-                </div>
-            </div>
-        </div> <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left'></i> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right'></i> </a>
+            <!--/.Second slide-->
+
+        </div>
+        <!--/.Slides-->
+
+
     </div>
+    <!--/.Carousel Wrapper-->
+
+
 </div>

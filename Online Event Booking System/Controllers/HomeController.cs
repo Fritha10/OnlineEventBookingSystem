@@ -38,10 +38,6 @@ namespace Online_Event_Booking_System.Controllers
         {
             return View();
         }
-        public IActionResult chennai()
-        {
-            return View();
-        }
         public IActionResult music()
         {
             return View();

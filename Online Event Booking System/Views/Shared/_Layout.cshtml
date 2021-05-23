@@ -31,9 +31,8 @@
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" asp-controller="Home" asp-action="mumbai">Mumbai</a>
-                                    <a class="dropdown-item" asp-controller="Home" asp-action="delhi">Delhi</a>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="delhi">New Delhi</a>
                                     <a class="dropdown-item" asp-controller="Home" asp-action="kolkata">Kolkata</a>
-                                    <a class="dropdown-item" asp-controller="Home" asp-action="Cchennai">Chennai</a>
                                 </div>
                             </div>
                         </li>
@@ -49,14 +48,19 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Registration" asp-action="Create">Sign-Up</a>
+                        <li class="nav-item ">
+                            <div class="dropdown">
+                                <button class="btn  btn-default  text-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Register
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" asp-controller="Registration" asp-action="Create">Sign Up</a>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="Registration">Login</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="ContactUs">ContactUs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Registration">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Users" asp-action="Index">Admin</a>
